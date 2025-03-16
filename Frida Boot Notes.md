@@ -84,6 +84,14 @@ Interceptor.attach([[target], [callbacks]);
 **Target: memory address**
 See section: Get exports from modules to find target memory address.
 
+**Tip: use vars instead of addresses**
+You can do something like this in a js script to make it look prettier.
+```
+var myfunc = DebugSymbol.getFunctionByName("myfunc");
+
+Interceptor.attach(myfunc, [callbacks]);
+```
+
 **Callbacks**
 You can specify what to do on function enter/exit with callbacks.
 ```
@@ -119,6 +127,7 @@ args[0] = ptr("0x01");
 **Strings**
 Allocate character array with `Memory.allocUtf8String` and get the pointer
 ```
+var printf = DebugSymbol.getFunctionByName("printf");
 var buf = Memory.allocUtf8String("Hello!");
 
 Interceptor.attach(printf, {
@@ -126,3 +135,22 @@ Interceptor.attach(printf, {
 		args[0] = buf;}
 })
 ```
+^ printf() being used as an target example here
+
+##### Overriding return values
+```
+onLeave: function(retval);
+```
+
+**Example**
+```
+var randrange = DebugSymbol.getFunctionByName("rand_range");
+
+Interceptor.attach(randrange, {
+	onLeave: function(retval) {
+		console.log(retval);  // print out return value
+		retval.replace(prt("0x01")); // replace retval with 1
+	}
+});
+```
+^ rand_range being used as an example to always make it return 1

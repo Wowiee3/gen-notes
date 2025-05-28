@@ -1,7 +1,8 @@
 {
   "accentColor": "#e8b459",
-  "monospaceFontFamily": "Liberation Mono",
-  "textFontFamily": "Courier New",
+  "monospaceFontFamily": "Cascadia Mono",
+  "textFontFamily": "Cascadia Code",
   "interfaceFontFamily": "Liberation Mono",
-  "cssTheme": "Obsidian gruvbox"
+  "cssTheme": "Obsidian gruvbox",
+  "theme": "obsidian"
 }

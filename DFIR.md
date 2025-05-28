@@ -40,3 +40,16 @@ Fast search tool for Windows artefacts useful if you want to find all instances 
 	- `RuleName`: technique ids and technique names for attacks
 	- `QueryName`: to find website queries
 	- `TargetFilename`: files used
+
+## dnSpy
+Debug and disassemble .NET programs
+
+## Monodis
+If you want to quickly disassemble programs written with the .NET framework from the terminal:
+
+```shell
+> monodis --output=[filename] [file].exe
+```
+
+## Unpac.Me
+Automated malware unpacking and artifact extraction

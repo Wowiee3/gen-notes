@@ -27,20 +27,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Frida Boot Notes.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Frida Boot Notes"
-            }
-          },
-          {
-            "id": "2ef8054aaf223514",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Music list.md",
                 "mode": "source",
                 "source": false
@@ -199,17 +185,17 @@
   },
   "active": "c9f7356834668217",
   "lastOpenFiles": [
-    "HTB Module - Intro to Network Traffic Analysis.md",
-    "Music list.md",
-    "HTB Module - Incident Handling Process.md",
-    "HTB Module - Security Monitoring and SIEM Fundamentals.md",
     "HTB Module - YARA & SIGMA for SOC Analysts.md",
-    "().md",
-    "sigma_intro.webp",
-    "DFIR.md",
-    "Frida Boot Notes.md",
     "HTB Module - Windows Event Logs & Finding Evil.md",
+    "HTB Module - Security Monitoring and SIEM Fundamentals.md",
+    "HTB Module - Incident Handling Process.md",
+    "HTB Module - Intro to Network Traffic Analysis.md",
+    "Frida Boot Notes.md",
+    "DFIR.md",
+    "Music list.md",
     "Pasted image 20250416174720.png",
+    "sigma_intro.webp",
+    "().md",
     "img",
     "New folder"
   ]
